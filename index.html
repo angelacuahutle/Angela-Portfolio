@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body class="body">
+  <header>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <nav class="">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+
+                Heroicon name: outline/menu
+
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!--
+                Icon when menu is open.
+
+                Heroicon name: outline/x
+
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex-1 flex items-center justify-end sm:items-stretch sm:justify-end">
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#"
+                  class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portafolio</a>
+
+                <a href="#"
+                  class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+
+                <a href="#" class="text-white
+                hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+
+                <icon class=""></icon>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium"
+            aria-current="page">Portafolio</a>
+
+          <a href="#"
+            class="text-whitehover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+
+          <a href="#"
+            class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+
+          <a href="#"
+            class="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="flex flex-col">
+      <!-- This example requires Tailwind CSS v2.0+ -->
+      <div class="justify-center flex flex-col">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+          <h2 class="text-3xl font-extrabold tracking-tight name sm:text-4xl">
+            <span class="flex justify-center name">Angela Cuahutle</span>
+            <span class="block text-white dev">Software Developer</span>
+          </h2>
+        </div>
+        <div class="flex flex-col justify-center">
+          <h3 class="flex text-white justify-center mb-6">I can help you build a product , feature or website Look
+            through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+          </h3>
+        </div>
+      </div>
+
+      <div class="flex justify-around mt-6">
+        <div class="flex flex-col">
+          <h4>Languages</h4>
+          <ul>
+            <li class="text-white">JavaScript</li>
+            <li class="text-white">Ruby</li>
+            <li class="text-white">HTML</li>
+            <li class="text-white">CSS</li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <h4>Skills</h4>
+          <ul>
+            <li class="text-white">Github</li>
+            <li class="text-white">SQL</li>
+            <li class="text-white">Terminal</li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <h4>Frameworks</h4>
+          <ul>
+            <li class="text-white">Ruby on Rails</li>
+            <li class="text-white">React/Redux</li>
+            <li class="text-white">RSPec</li>
+            <li class="text-white">Boostsrap</li>
+          </ul>
+          <div class="icons">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sm:container md:container-lg mx-auto">
+
+      <div class="flex">
+        <div class="vector"></div>
+        <p class="titles flex items-center">MY RECENT WORK</p>
+      </div>
+      <div class="max-w-lg justify-center bg-white rounded-xl shadow-md overflow-hidden md:max-w-3xl mb-6 ml-12">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./assets/portada1.png"
+              alt="Art Content Capstone">
+            <a href="https://github.com/angelacuahutle/Art_Content_Capstone/tree/views"></a>
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Art Content Capstone</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Blog with Access Functionality</a>
+            <p class="mt-2 text-slate-600">Microverse Capstone project! A blog app with multiple articles that involves art and technology that includes voting features, image uploading, and a nice grid layout. DESKTOP APP ONLY.*.</p>
+            <ul class="flex justify-arround">
+              <li class="text-black-500">Ruby on Rails|</li>
+              <li class="text-black-500">Ruby|</li>
+              <li class="text-black-500">PostgreSQL|</li>
+              <li class="text-black-500">RSPec|</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-lg justify-center bg-white rounded-xl shadow-md overflow-hidden md:max-w-3xl mb-6 ml-12">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./assets/portada1.png"
+              alt="Art Content Capstone">
+            <a href="https://github.com/angelacuahutle/Art_Content_Capstone/tree/views"></a>
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Art Content Capstone</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Blog with Access Functionality</a>
+            <p class="mt-2 text-slate-600">Microverse Capstone project! A blog app with multiple articles that involves art and technology that includes voting features, image uploading, and a nice grid layout. DESKTOP APP ONLY.*.</p>
+            <ul class="flex justify-arround">
+              <li class="text-black-500">Ruby on Rails|</li>
+              <li class="text-black-500">Ruby|</li>
+              <li class="text-black-500">PostgreSQL|</li>
+              <li class="text-black-500">RSPec|</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-lg justify-center bg-white rounded-xl shadow-md overflow-hidden md:max-w-3xl mb-6 ml-12">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./assets/portada1.png"
+              alt="Art Content Capstone">
+            <a href="https://github.com/angelacuahutle/Art_Content_Capstone/tree/views"></a>
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Art Content Capstone</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Blog with Access Functionality</a>
+            <p class="mt-2 text-slate-600">Microverse Capstone project! A blog app with multiple articles that involves art and technology that includes voting features, image uploading, and a nice grid layout. DESKTOP APP ONLY.*.</p>
+            <ul class="flex justify-arround">
+              <li class="text-black-500">Ruby on Rails|</li>
+              <li class="text-black-500">Ruby|</li>
+              <li class="text-black-500">PostgreSQL|</li>
+              <li class="text-black-500">RSPec|</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-lg justify-center bg-white rounded-xl shadow-md overflow-hidden md:max-w-3xl mb-6 ml-12">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./assets/portada1.png"
+              alt="Art Content Capstone">
+            <a href="https://github.com/angelacuahutle/Art_Content_Capstone/tree/views"></a>
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Art Content Capstone</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Blog with Access Functionality</a>
+            <p class="mt-2 text-slate-600">Microverse Capstone project! A blog app with multiple articles that involves art and technology that includes voting features, image uploading, and a nice grid layout. DESKTOP APP ONLY.*.</p>
+            <ul class="flex justify-arround">
+              <li class="text-black-500">Ruby on Rails|</li>
+              <li class="text-black-500">Ruby|</li>
+              <li class="text-black-500">PostgreSQL|</li>
+              <li class="text-black-500">RSPec|</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-lg justify-center bg-white rounded-xl shadow-md overflow-hidden md:max-w-3xl mb-6 ml-12">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./assets/portada1.png"
+              alt="Art Content Capstone">
+            <a href="https://github.com/angelacuahutle/Art_Content_Capstone/tree/views"></a>
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Art Content Capstone</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Blog with Access Functionality</a>
+            <p class="mt-2 text-slate-600">Microverse Capstone project! A blog app with multiple articles that involves art and technology that includes voting features, image uploading, and a nice grid layout. DESKTOP APP ONLY.*.</p>
+            <ul class="flex justify-arround">
+              <li class="text-black-500">Ruby on Rails|</li>
+              <li class="text-black-500">Ruby|</li>
+              <li class="text-black-500">PostgreSQL|</li>
+              <li class="text-black-500">RSPec|</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="sm:container md:container-lg mx-auto">
+      <p class="titles">CONTACT ME</p>
+      <h5 class="text-white">If you have an application you are interested in developing, a feature that you need built
+        or a project that
+        needs coding. I’d love to help with it </h5>
+      <form action=""></form>
+      <button>send</button>
+      <div class="icons">
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <h2>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+      <form action="https://formspree.io/f/moqrdeno" method="POST">
+        <fieldset>
+          <input
+            class="inputs"
+            type="text"
+            name="full-name"
+            id="name"
+            maxlength="30"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            class="inputs"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            name="comments"
+            id="comments"
+            maxlength="500"
+            placeholder="Enter text here"
+          ></textarea>
+        </fieldset>
+        <input type="submit" id="submit" name="submit" value="Get in touch" />
+      </form>
+    </section>
+    <!--Footer-->
+    <section id="form-section">
+      <h2>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+      <form action="https://formspree.io/f/moqrdeno" method="POST">
+        <fieldset>
+          <input
+            class="inputs"
+            type="text"
+            name="full-name"
+            id="name"
+            maxlength="30"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            class="inputs"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            name="comments"
+            id="comments"
+            maxlength="500"
+            placeholder="Enter text here"
+          ></textarea>
+        </fieldset>
+        <input type="submit" id="submit" name="submit" value="Get in touch" />
+      </form>
+    </section>
+    <footer id="form-icons">
+      <img src="icons/vector4.png" alt="github icon" />
+      <img src="icons/Disabled.png" alt="linkedin icon" />
+      <img class="gap" src="icons/vector1.png" alt="twitter" />
+      <img class="gap" src="icons/vector2.png" alt="hand" />
+      <img src="icons/vector3.png" alt="medium" />
+    </footer>
+  </body>
+</html>
+  </main>
+</body>
+
+</html>
