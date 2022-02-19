@@ -1,10 +1,10 @@
 body{
-  background:#2e0e69;
+  background:#220a4e;
 }
 
 .name{
   font-family:'Roboto' sans-serif;
-  font-weight: 600;
+  font-weight: 550;
   font-style: normal;
   font-size: 90px;
   line-height: 105.47px; 
@@ -50,4 +50,49 @@ h4{
   font-weight: 400;
   letter-spacing: 0em;
 
+}
+
+.back {
+  background-color: #afacd6;
+}
+
+.ball1{
+  position: absolute;
+  width: 90px;
+  height: 62px;
+  left: 69px;
+  top: 237px;
+  background: #EDECFF;
+  filter: blur(50px);
+}
+
+.ball2{
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  left: 1114px;
+  top: 604px;
+  background: #EDECFF;
+  filter: blur(50px);
+}
+
+.elipse1{
+  position: absolute;
+  width: 116px;
+  height: 126px;
+  left: 51px;
+  top: 54px;
+  background: #EDECFF;
+  filter: blur(50px);
+}
+
+.elipse2{
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  left: 28px;
+  top: 520px;
+  background: #EDECFF;
+  filter: blur(50px);
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
 }
