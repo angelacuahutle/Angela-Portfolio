@@ -70,7 +70,7 @@ h4{
   position: absolute;
   width: 90px;
   height: 80px;
-  left: 1114px;
+  left: 674px;
   top: 604px;
   background: #EDECFF;
   filter: blur(50px);
@@ -81,7 +81,7 @@ h4{
   width: 116px;
   height: 126px;
   left: 51px;
-  top: 54px;
+  top: 900px;
   background: #EDECFF;
   filter: blur(50px);
 }
@@ -91,7 +91,28 @@ h4{
   width: 10px;
   height: 40px;
   left: 28px;
-  top: 520px;
+  top: 1220px;
+  background: #EDECFF;
+  filter: blur(50px);
+  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
+}
+
+.elipselast{
+  position: absolute;
+  width: 116.19px;
+  height: 186.38px;
+  left: 890.3px;
+  top: 1364px;
+  background: #EDECFF;
+  filter: blur(50px);
+  transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
+}
+.elipsefooter{
+  position: absolute;
+  width: 58px;
+  height:202px;
+  left: 45.28px;
+  top: 1600px;
   background: #EDECFF;
   filter: blur(50px);
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
